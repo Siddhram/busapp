@@ -1,7 +1,7 @@
 import express from "express";
 import userModel from "../models/user.js";
 import { verifytoken } from "../middleware/verify.js";
-import bcrypt from 'bcrypt';
+import bcrypt from 'bcryptjs';
 import jwt from 'jsonwebtoken';
 const router=express.Router();
 router.post('/resister',async(req,res)=>{
